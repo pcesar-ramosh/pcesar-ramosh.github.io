@@ -2,16 +2,16 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: <a href='#'>M.Sc. in Economic Engineering</a>. Department of Economics. 
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Universidad Nacional de Ingeniería (UNI)</p>
+    <p>Av. Túpac Amaru 210, Office 1301, Rímac</p>
+    <p>Lima, Perú</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -27,8 +27,18 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am an economist with a postgraduate specialization in Quantitative Methods for Economic Analysis. I hold a Master’s degree in [Economic Engineering](https://unifieecs.wixsite.com/msc-econ-engineering) (MIE) from the National University of Engineering (UNI). I currently work as a researcher at the Ministry of Economy, providing policy advisory support. Additionally, I serve as a Research Assistant at [Research Institute in Economics and Finance](https://ri-ef.com/) (RIEF).
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Beyond my research work, I also contribute as a peer reviewer for academic journals and have experience teaching and delivering lectures on economics-related topics.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+My research focuses on **Macroeconomics, Finance, and Microeconomics**, with a particular emphasis on:  
+
+- Heterogeneous agents in asset pricing and macroeconomics  
+- Interaction between fiscal and monetary policy  
+- Empirical macro-finance  
+- Informal labor markets  
+- Applied econometrics  
+- Machine learning applications in economics  
+
+Go to [publications page](/al-folio/publications/)
+

@@ -1,14 +1,23 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - pcesar-ramosh
+  # - torvalds
+  # - alshedivat
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - pcesar-ramosh/intro_matlab
+  - pcesar-ramosh/Income_Dist_Households
+  - pcesar-ramosh/Interpolation
+
+
+#github_repos:
+#  - alshedivat/al-folio
+#  - jekyll/jekyll
+#  - twbs/bootstrap
+#  - jquery/jquery
+#  - FortAwesome/Font-Awesome
+#  - mathjax/MathJax
+#  - jpswalsh/academicons
+
+

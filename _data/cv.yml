@@ -11,8 +11,8 @@
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
+    - title: M.Sc.
+      institution: Universidad Nacional de Ingenieria, Lima Peru
       year: 1905
       description:
         - Description 1.
@@ -31,9 +31,9 @@
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Research and Teaching Assistant
+      institution: Research Institute in Economics and Finance
+      year: 2023 - 2025
       description:
         - Description 1.
         - Description 2.
@@ -48,9 +48,9 @@
         - Description 1.
         - Description 2.
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
+    - title: Teaching Assistant
+      institution: Master in Economic Engineering, Lima, Peru.
+      year: 2024-2025
 
     - title: Professor of Theoretical Physics
       institution: Karl-Ferdinand University, Prague, Czechoslovakia

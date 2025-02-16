@@ -495,11 +495,18 @@ ninja.data = [{
           window.open("mailto:%70%61%75%6C%6F.%72%61%6D%6F%73.%68@%75%6E%69.%70%65", "_blank");
         },
       },{
-        id: 'social-inspire',
-        title: 'Inspire HEP',
+        id: 'social-linkedin',
+        title: 'LinkedIn',
         section: 'Socials',
         handler: () => {
-          window.open("https://inspirehep.net/authors/1010907", "_blank");
+          window.open("https://www.linkedin.com/in/pcesar-ramos", "_blank");
+        },
+      },{
+        id: 'social-orcid',
+        title: 'ORCID',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://orcid.org/0009-0009-5957-7342", "_blank");
         },
       },{
         id: 'social-rss',

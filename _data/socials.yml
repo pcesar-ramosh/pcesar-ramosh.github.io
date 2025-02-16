@@ -7,7 +7,7 @@
 # bluesky_url: # your bluesky URL
 # dblp_url: # your DBLP profile url
 # discord_id: # your discord id (18-digit unique numerical identifier)
-email: you@example.com # your email address
+email: paulo.ramos.h@uni.pe # your email address
 # facebook_id: # your facebook id
 # flickr_id: # your flickr id
 # github_username: # your GitHub user name
@@ -48,4 +48,4 @@ scholar_userid: qc6CJjYAAAAJ # your Google Scholar ID
 custom_social: # can be any name here other than the ones already defined above
   logo: https://www.alberteinstein.com/wp-content/uploads/2024/03/cropped-favicon-192x192.png # can be png, svg, jpg
   title: Custom Social
-  url: https://www.alberteinstein.com/
+  url: https://www.linkedin.com/in/pcesar-ramos/

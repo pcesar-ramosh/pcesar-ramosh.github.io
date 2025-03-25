@@ -5,7 +5,7 @@
     "image": "",
     "email": "paulo.ramos@uni.pe",
     "phone": "(+591) 701-200-23",
-    "url": "https://alshedivat.github.io/al-folio/",
+    "url": "https://pcesar-ramosh.github.io/",
     "summary": "A Bolivian economist specializing in quantitative methods and economic analysis, with research interests in macroeconomics, finance, and machine learning applied to economic policy.",
     "location": {
       "address": "EE.UU. St",
@@ -16,24 +16,24 @@
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
+        "network": "LinkedIn",
+        "username": "Cesar Ramos",
+        "url": "https://www.linkedin.com/in/pcesar-ramos"   
       }
     ]
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
+      "name": "Ministry of Economy and Public Finance, Bolivia",
+      "position": "Researcher",
       "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
+      "startDate": "2020-12-07",
+      "endDate": "2025-12-01",
+      "summary": "Responsible for managing the drafting, review, editing, and publication of the Cuadernos de Investigación Económica Boliviana journal, which promotes research and analysis on key economic issues in Bolivia. Conducts research on fiscal, real, financial, price, and external sectors, applying econometric tools to provide scientific evidence on the impact of economic policies. Actively participates in intra- and inter-institutional technical teams, contributing to economic analysis and the preparation of key reports to support policymaking.",
+      "highlights": ["MEFP"]
     }
   ],
-  "volunteer": [
+  "reas": [
     {
       "organization": "People's Climate March",
       "location": "Zurich, Switzerland",

@@ -1,18 +1,18 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Cesar Ramos",
+    "label": "Economist",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
+    "email": "paulo.ramos@uni.pe",
+    "phone": "(+591) 701-200-23",
     "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "summary": "A Bolivian economist specializing in quantitative methods and economic analysis, with research interests in macroeconomics, finance, and machine learning applied to economic policy.",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+      "address": "EE.UU. St",
+      "postalCode": "LPZ 591",
+      "city": "La Paz",
+      "countryCode": "BOL",
+      "region": "Murillo"
     },
     "profiles": [
       {

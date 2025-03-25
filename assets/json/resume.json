@@ -5,7 +5,7 @@
     "image": "",
     "email": "paulo.ramos@uni.pe",
     "phone": "(+591) 701-200-23",
-    "url": "https://pcesar-ramosh.github.io/",
+    "url": "https://www.linkedin.com/in/pcesar-ramos",
     "summary": "A Bolivian economist specializing in quantitative methods and economic analysis, with research interests in macroeconomics, finance, and machine learning applied to economic policy.",
     "location": {
       "address": "EE.UU. St",
@@ -35,123 +35,123 @@
   ],
   "volunteer": [
     {
-      "organization": "People's Climate March",
-      "location": "Zurich, Switzerland",
-      "position": "Lead Organizer",
-      "url": "https://example.com",
-      "startDate": "2014-04-01",
-      "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
+      "organization": "Research Institute in Economics and Finance",
+      "location": "Lima, Peru",
+      "position": "Research Assistant",
+      "url": "https://ri-ef.com/",
+      "startDate": "2022-05-01",
+      "endDate": "2025-05-01",
+      "summary": "Assist Professor associated with RIEF in academic research (papers and books).",
+      "highlights": ["Passing the hand-written professor's notes to LaTeX.", "Developing Matlab/Python code, and being a Teaching Assistant in any course related to this topic."]
     }
   ],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "location": "Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
-      "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
+      "institution": "National University of Engineering (UNI)",
+      "location": "Lima, Peru",
+      "url": "https://unifieecs.wixsite.com/msc-econ-engineering",
+      "area": "Master of Science in Economic Engineering",
+      "studyType": "M.Sc.",
+      "startDate": "2023-08-01",
+      "endDate": "2025-09-01",
       "score": "10",
-      "courses": ["Theory of Relativity"]
+      "courses": ["Advanced training in economic theory and the application of quantitative tools to equip graduates for conducting high-quality economic research."]
     }
   ],
   "awards": [
     {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
+      "title": "Excellence Course in Economics",
+      "date": "2019-10-01",
+      "awarder": "Faculty of Economics and Business, University of Chile; Private University of Bolivia; Bolivian Catholic University",
       "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
+      "summary": "Completed with distinction, ranking 3rd in the program. Key subjects included Econometrics, Macroeconomics and Microeconomics."
     }
   ],
   "certificates": [
     {
-      "name": "Machine Learning",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
+      "name": "Latin American Macroeconomic Reality",
+      "date": "2016-12-01",
+      "issuer": "Inter-American Development Bank through edX.",
+      "url": "https://courses.edx.org/certificates/dca6ebe651d748f1b5dfcced3f406ef4",
       "icon": "fa-solid fa-location-dot"
     },
     {
-      "name": "Quantum Computing",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
+      "name": "Data for the effectiveness of public policies",
+      "date": "2017-07-10",
+      "issuer": "Inter-American Development Bank through edX.",
+      "url": "https://courses.edx.org/certificates/73c42025f168436ebab1c8a2b37d58a6",
       "icon": "fa-solid fa-tag"
     },
     {
-      "name": "Quantum Information",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
+      "name": "Financial Programming and Policies, Part 1",
+      "date": "2017-04-01",
+      "issuer": "International Monetary Fund through edX.",
+      "url": "https://courses.edx.org/certificates/262b96b8a59041cdbe419016fc63170a",
       "icon": "fa-solid fa-envelope"
     },
     {
-      "name": "Quantum Cryptography",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
+      "name": "Macroeconomic Diagnostics",
+      "date": "2020-03-21",
+      "issuer": "International Monetary Fund through edX.",
+      "url": "https://courses.edx.org/certificates/1c7ec79464a641be981bcec1fa364983",
       "icon": "fa-solid fa-hashtag"
     },
     {
-      "name": "Quantum Communication",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
+      "name": "Monetary Policy Analysis and Forecasting",
+      "date": "2020-08-31",
+      "issuer": "International Monetary Fund through edX.",
+      "url": "https://courses.edx.org/certificates/9636619471384bc4a2e317687c895177",
       "icon": "fa-solid fa-calendar"
     },
     {
-      "name": "Quantum Teleportation",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
+      "name": "Macroeconometric Forecasting",
+      "date": "2020-12-20",
+      "issuer": "International Monetary Fund through edX.",
+      "url": "https://courses.edx.org/certificates/e106de95ec684afaa290a1981b22da3b",
       "icon": "fa-solid fa-clipboard-check"
     }
   ],
   "publications": [
     {
-      "name": "Zur Elektrody/namik bewegter Körper",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-06-30",
-      "url": "https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies",
-      "summary": "It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source."
+      "name": "Machine Learning Insights into Bolivia's Economic Downturns",
+      "publisher": "Cesar Ramos",
+      "releaseDate": "2024-03-15",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4981964",
+      "summary": "This document approaches the critical need for accurate recession prediction in Bolivia by applying machine learning methodologies, specifically Logistic Regression, Random Forests, and Extreme Gradient Boosting. During the past three decades, disruptive events such as pandemics, financial crises, and geopolitical conflicts have highlighted the importance of early warning signals for anticipating economic downturns. However, forecasting recessions is complex due to the rarity of these events and the limited data available. Whereas traditional methods dominate existing literature, Bolivia lacks an official recession predictor. Our approach aims to identify turning points in economic activity through comprehensive data integration, providing a more accurate predictor than conventional methods. We found that real, monetary, and fiscal variables are relevant for predicting this indicator. Even though the findings are not definitive, they contribute to the empirical literature and provide a foundation for future research in this field, eventually assisting policymakers in mitigating the impact of economic recessions."
     },
     {
-      "name": "Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-03-18",
-      "url": "https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt",
-      "summary": "In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921."
+      "name": "Assessing the Demand for Foreign Currency through a Value Storage Lens",
+      "publisher": "Romero, Ivan; Monzón, Carlos and Ramos, Cesar",
+      "releaseDate": "2025-02-12",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5103336",
+      "summary": "This document analyzes the demand for dollars in Bolivia, emphasizing how individuals turn to foreign currencies as a refuge during periods of economic instability and devaluation expectations. Using the autoregressive distributed lag model (ARDL), the analysis incorporates key variables, including the M2 money supply, real interest rate, inflation, and devaluation expectations, to estimate a dollar demand function. The findings reveal that economic uncertainty and a preference for more stable assets significantly drive dollar demand. These results align with Cagan’s theory, highlighting the inverse relationship between inflation and the willingness to hold local currency. Quantitatively, the estimated demand for dollars in 2023 linked to these factors amounts to approximately $us 760 million."
     },
     {
-      "name": "Die Grundlage der allgemeinen Relativitätstheorie",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1916-03-20",
-      "url": "https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie",
-      "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
+      "name": "Growth-Inequality Trade-off in Tax Policy: A Heterogeneous Agents Approach",
+      "publisher": "Monzon, Carlos; Ramos, Cesar and Romero, Ivan",
+      "releaseDate": "2025-02-18",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5139413",
+      "summary": "This study analyzes the effects of changes in labor and consumption taxes on macroeconomic variables and income distribution in Bolivia using a heterogeneous agent overlapping generations (OLG) model. The model accounts for differences in productivity by age, idiosyncratic and uninsured income shocks, and permanent heterogeneity in individuals' abilities. Model parameters are calibrated using aggregate macroeconomic data, information from the Household and Employment Survey, and values from the existing literature, ensuring that the simulated moments align with macroeconomic data and accurately replicate Bolivia's income distribution. The findings suggest that lower tax rates enhance capital accumulation, expand labor supply, and stimulate economic growth, primarily benefiting deciles 6 through 9. However, this also leads to a decline in the income share of lower-income groups and an increase in inequality, as reflected in a higher Gini coefficient. Conversely, tax increases generate the opposite effects."
     }
   ],
   "skills": [
     {
-      "name": "Physics",
+      "name": "Economics",
       "level": "Master",
       "icon": "fa-solid fa-hashtag",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "Economic Modelling",
+        "Computational Economics",
+        "Bayesian Econometric Analysis and Regression and Dynare Toolboxes",
+        "Computing Skills in MATLAB, R, Python",
+        "Computing Skills in Stata, Julia",
+        "Research Tools: Latex, Zotero, Overleaf, Beamer, Tikz"
       ]
     }
   ],
   "languages": [
     {
-      "language": "German",
+      "language": "Spanish",
       "fluency": "Native speaker",
       "icon": ""
     },
@@ -163,37 +163,37 @@
   ],
   "interests": [
     {
-      "name": "Physics",
+      "name": "Economics",
       "icon": "fa-solid fa-tag",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "Heterogeneous Agents",
+        "Macroeconometrics",
+        "Labor Markets",
+        "Machine Learning in Econ and Finance",
+        "Policy Economics",
+        "Fiscal and Monetary Policy"
       ]
     }
   ],
   "references": [
     {
-      "name": "Professor John Doe",
+      "name": "Professor Jose Berrospide",
       "icon": "fa-solid fa-laptop",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
+      "reference": "Ph.D. in Economics, University of Michigan. Deputy Director of Financial Stability, Federal Reserve."
     },
     {
-      "name": "Professor John Doe",
+      "name": "Professor Hamilton Galindo Gil",
       "icon": "fa-solid fa-thumbtack",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
+      "reference": "Ph.D. in Finance, Assistant Professor at Cleveland State University, researching asset valuation, monetary policy, and global economics."
     }
   ],
   "projects": [
     {
-      "name": "Quantum Computing",
+      "name": "Heterogenoeus Agents and Fiscal Policy",
       "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01",
+      "highlights": ["Heteroneous Agents", "Informality", "Fiscal Policy"],
+      "startDate": "2025-01-01",
+      "endDate": "2026-01-01",
       "url": "https://example.com"
     }
   ]

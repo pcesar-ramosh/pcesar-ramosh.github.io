@@ -26,7 +26,7 @@
     {
       "name": "Ministry of Economy and Public Finance, Bolivia",
       "position": "Researcher",
-      "url": "https://example.com",
+      "url": "https://www.economiayfinanzas.gob.bo/cieb",
       "startDate": "2020-12-07",
       "endDate": "2025-12-01",
       "summary": "Responsible for managing the drafting, review, editing, and publication of the Cuadernos de Investigación Económica Boliviana journal, which promotes research and analysis on key economic issues in Bolivia. Conducts research on fiscal, real, financial, price, and external sectors, applying econometric tools to provide scientific evidence on the impact of economic policies. Actively participates in intra- and inter-institutional technical teams, contributing to economic analysis and the preparation of key reports to support policymaking.",
@@ -190,11 +190,11 @@
   "projects": [
     {
       "name": "Heterogenoeus Agents and Fiscal Policy",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Heteroneous Agents", "Informality", "Fiscal Policy"],
+      "summary": "This project explores heterogeneous agents' impact on informality and fiscal policy, analyzing how diverse economic behaviors influence inequality and develop strategies for effective policy interventions to promote economic inclusion.",
+      "highlights": ["Heterogeneous Agents", "Informality", "Fiscal Policy"],
       "startDate": "2025-01-01",
       "endDate": "2026-01-01",
-      "url": "https://example.com"
+      "url": "https://ri-ef.com/heterogeneous-agents-research-initiative/"
     }
   ]
 }

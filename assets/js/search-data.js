@@ -431,18 +431,18 @@ ninja.data = [{
           window.location.href = "/blog/2015/formatting-and-links/";
         
       },
-    },{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
-          description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
+    },{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
           section: "News",},{id: "news-i-was-in-tarija-bolivia-presenting-my-paper-at-the-bolivian-conference-on-development-economics",
           title: 'I was in Tarija, Bolivia, presenting my paper at the Bolivian Conference on...',
           description: "",
-          section: "News",},{id: "projects-project-1",
+          section: "News",},{id: "news-são-paulo-school-of-advanced-science-on-high-dimensional-models",
+          title: 'São Paulo School of Advanced Science on High-Dimensional Models',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_2/";
+            },},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
           section: "Projects",handler: () => {

@@ -431,8 +431,8 @@ ninja.data = [{
           window.location.href = "/blog/2015/formatting-and-links/";
         
       },
-    },{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+    },{id: "news-the-17th-encounter-of-economists-of-bolivia-will-be-held-in-september-at-the-universidad-san-francisco-xavier-de-chuquisaca-commemorating-its-400th-anniversary-this-prestigious-event-will-address-regional-economic-performance-amid-geopolitical-tensions-participants-can-submit-research-papers-related-to-various-economic-themes-sparkles-smile",
+          title: 'The 17th Encounter of Economists of Bolivia will be held in September at...',
           description: "",
           section: "News",},{id: "news-i-was-in-tarija-bolivia-presenting-my-paper-at-the-bolivian-conference-on-development-economics",
           title: 'I was in Tarija, Bolivia, presenting my paper at the Bolivian Conference on...',

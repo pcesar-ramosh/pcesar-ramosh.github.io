@@ -1,14 +1,60 @@
-github_users:
-  - pcesar-ramosh
+# Repositories page (/repositories/)
+#
+# github_user: your GitHub user name (used for the "all my repositories" link).
+# groups: the sections of the page, in order.
+# repositories: one card per repository. Only public repositories work.
+#   To add a card, copy one block (from "- name:" to "languages:") and change it.
+#   name:        owner/repository, exactly as on GitHub
+#   title:       the title shown on the card
+#   description: one or two sentences
+#   group:       must match one of the names in "groups"
+#   languages:   list of languages shown as small labels
 
-repo_description_lines_max: 2
+github_user: pcesar-ramosh
 
-# Only public repositories can be shown. Order = order on the page.
-github_repos:
-  - pcesar-ramosh/fiscal_policy_informality
-  - pcesar-ramosh/Winter-School-Nonlinear-Econometrics
-  - pcesar-ramosh/abm_models
-  - pcesar-ramosh/Econometrics
-  - pcesar-ramosh/intro_matlab
-  - pcesar-ramosh/Income_Dist_Households
-  - pcesar-ramosh/Interpolation
+groups:
+  - Research code
+  - Teaching materials and tools
+
+repositories:
+  - name: pcesar-ramosh/fiscal_policy_informality
+    title: Fiscal policy and informality (heterogeneous agents)
+    description: Code for my M.Sc. thesis with Ian Carrasco. A continuous-time model of formal and informal workers (HJB and Fokker-Planck equations, finite differences) with tax and transfer experiments.
+    group: Research code
+    languages: [MATLAB]
+
+  - name: pcesar-ramosh/Income_Dist_Households
+    title: Household income distribution in Bolivia
+    description: Lorenz curves, Gini coefficients, percentile ratios and life-cycle income profiles from Bolivia's 2023 Household Survey (EH).
+    group: Research code
+    languages: [Stata, Python, R]
+
+  - name: pcesar-ramosh/Winter-School-Nonlinear-Econometrics
+    title: Nonlinear econometrics (RIEF Winter School)
+    description: Course notebooks and code for threshold and smooth-transition models (TAR, STAR, TVAR), nonlinear local projections, binary-choice time series and Bayesian regression.
+    group: Teaching materials and tools
+    languages: [Python, EViews]
+
+  - name: pcesar-ramosh/abm_models
+    title: Agent-based models in economics and finance
+    description: Teaching notebooks on agent-based modeling, from foundations and a toy model to banking contagion and a model applied to Bolivia.
+    group: Teaching materials and tools
+    languages: [Python]
+
+  - name: pcesar-ramosh/intro_matlab
+    title: Introduction to MATLAB for economists
+    description: MATLAB live scripts and guides, including installation of Dynare, IRIS and the BEAR toolbox, and an introduction to VAR analysis.
+    group: Teaching materials and tools
+    languages: [MATLAB]
+
+  - name: pcesar-ramosh/Econometrics
+    title: Time-series econometrics
+    description: Notebooks for the analysis, estimation and forecasting of time series, starting with univariate analysis.
+    group: Teaching materials and tools
+    languages: [Python]
+
+  - name: pcesar-ramosh/Interpolation
+    title: Interpolation of series with missing data
+    description: EViews programs that fill gaps in time series and compare interpolation methods.
+    group: Teaching materials and tools
+    languages: [EViews]

@@ -1,9 +1,6 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
+# Badges (the "abbr" field in papers.bib): optional link and color for each one.
+"SSRN":
+  url: https://www.ssrn.com/
 
-"PhysRev":
-  url: https://journals.aps.org/
-
-"Vision":
-  color: "#009f36"
+"BCB":
+  url: https://www.bcb.gob.bo/

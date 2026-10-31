@@ -1,24 +1,14 @@
 github_users:
   - pcesar-ramosh
-  # - torvalds
-  # - alshedivat
 
 repo_description_lines_max: 2
 
+# Only public repositories can be shown. Order = order on the page.
 github_repos:
+  - pcesar-ramosh/fiscal_policy_informality
+  - pcesar-ramosh/Winter-School-Nonlinear-Econometrics
+  - pcesar-ramosh/abm_models
+  - pcesar-ramosh/Econometrics
   - pcesar-ramosh/intro_matlab
   - pcesar-ramosh/Income_Dist_Households
   - pcesar-ramosh/Interpolation
-  - pcesar-ramosh/Econometrics
-
-
-#github_repos:
-#  - alshedivat/al-folio
-#  - jekyll/jekyll
-#  - twbs/bootstrap
-#  - jquery/jquery
-#  - FortAwesome/Font-Awesome
-#  - mathjax/MathJax
-#  - jpswalsh/academicons
-
-

@@ -2,7 +2,7 @@
 layout: page
 title: Fiscal policy, informality and wealth distribution
 description: A heterogeneous-agent model of fiscal policy in economies with high informality (M.Sc. thesis)
-img:
+img: assets/img/projects/fiscal_policy_informality.png
 importance: 1
 category: Research
 ---
@@ -16,6 +16,18 @@ This project was my M.Sc. thesis in Economic Engineering at the Universidad Naci
 - Heterogeneous agents: formal and informal workers. Informal workers face lower wages and higher borrowing costs, and are exempt from income taxes.
 - Fiscal policy: income taxes (formal sector only), consumption taxes (all agents) and targeted transfers to informal workers.
 - Solved in continuous time with the Hamilton–Jacobi–Bellman and Kolmogorov forward (Fokker–Planck) equations, using a finite-difference upwind scheme in MATLAB.
+
+<div class="row">
+  <div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/img/projects/thesis_consumption_policies.png" title="Consumption policy functions" class="img-fluid rounded z-depth-1" %}
+  </div>
+  <div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/img/projects/thesis_lorenz_wealth.png" title="Lorenz curve of wealth" class="img-fluid rounded z-depth-1" %}
+  </div>
+</div>
+<div class="caption">
+  Baseline model of the thesis. Left: consumption as a function of assets for informal and formal workers. Right: Lorenz curve of wealth.
+</div>
 
 **Contributions.** The project brings informality into heterogeneous-agent macroeconomics as a structural feature of emerging economies, and evaluates fiscal policy under different levels of informality and under shocks such as COVID-19.
 

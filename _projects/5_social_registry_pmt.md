@@ -2,7 +2,7 @@
 layout: page
 title: Social Registry of Households Roadmap
 description: Household prioritization with Proxy Means Testing and machine learning (MEFP & IDB, 2025)
-img:
+img: assets/img/projects/social_registry_pmt.png
 importance: 1
 category: Policy
 ---

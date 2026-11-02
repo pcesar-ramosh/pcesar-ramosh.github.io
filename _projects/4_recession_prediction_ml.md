@@ -2,7 +2,7 @@
 layout: page
 title: Predicting recessions in Bolivia with machine learning
 description: Logistic regression, random forests and gradient boosting as an early-warning indicator
-img:
+img: assets/img/projects/recession_prediction_ml.png
 importance: 4
 category: Research
 ---

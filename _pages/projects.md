@@ -7,6 +7,10 @@ nav: true
 nav_order: 3
 display_categories: [Research, Policy]
 horizontal: false
+_styles: >
+  .projects .card-title { font-size: 1.2rem; line-height: 1.35; margin-bottom: 0.4rem; }
+  .projects .card-text { font-size: 0.9rem; }
+  .projects .card-img-top { aspect-ratio: 16 / 10; object-fit: cover; }
 ---
 
 <!-- pages/projects.md -->

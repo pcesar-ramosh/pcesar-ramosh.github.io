@@ -4,7 +4,7 @@ title: Fiscal policy, informality and wealth distribution
 description: A heterogeneous-agent model of fiscal policy in economies with high informality (M.Sc. thesis)
 img:
 importance: 1
-category: research
+category: Research
 ---
 
 **Question.** What are the effects of fiscal policy on wealth and consumption distribution in an economy with high informality?

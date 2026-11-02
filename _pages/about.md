@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: M.Sc. candidate in Policy Economics · <a href='https://cde.williams.edu/'>Center for Development Economics</a>, Williams College
 

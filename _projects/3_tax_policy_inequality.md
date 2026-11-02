@@ -4,7 +4,7 @@ title: Tax policy, growth and inequality in Bolivia
 description: A heterogeneous-agent overlapping-generations model of labor and consumption taxes
 img:
 importance: 3
-category: research
+category: Research
 ---
 
 **Paper:** Monzón, C., Ramos, C. and Romero, I. (2025). *Growth-Inequality Trade-off in Tax Policy: A Heterogeneous Agents Approach.* [SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5139413)

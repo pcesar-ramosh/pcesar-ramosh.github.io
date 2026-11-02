@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /repositories/
-title: repositories
+title: Repositories
 description: Code for my research and teaching.
 nav: true
 nav_order: 4

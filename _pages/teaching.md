@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /teaching/
-title: teaching
+title: Teaching
 description: Courses I have taught at the graduate and undergraduate level.
 nav: true
 nav_order: 6
@@ -31,6 +31,7 @@ Led tutorial sessions and software labs; designed and graded quantitative proble
 
 ### Course materials
 
+- [Stata guide](/teaching/stata/): the commands I use in applied econometrics, from data management, simulation and inference by hand to survey weights, regression, panel data, graphs and publication-ready tables, with examples you can copy and run.
 - [Nonlinear Econometrics – RIEF Winter School](https://github.com/pcesar-ramosh/Winter-School-Nonlinear-Econometrics): code examples, datasets and materials in Python, R and MATLAB.
 - [Agent-Based Models in Economics and Finance](https://github.com/pcesar-ramosh/abm_models): educational notebooks on agent-based models.
 - [Introduction to MATLAB](https://github.com/pcesar-ramosh/intro_matlab)

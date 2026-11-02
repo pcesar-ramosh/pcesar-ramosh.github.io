@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /publications/
-title: publications
+title: Publications
 description: Working papers, publications and reports, newest first.
 nav: true
 nav_order: 2

@@ -4,7 +4,7 @@ title: Predicting recessions in Bolivia with machine learning
 description: Logistic regression, random forests and gradient boosting as an early-warning indicator
 img:
 importance: 4
-category: research
+category: Research
 ---
 
 **Paper:** Ramos, C. (2024). *Machine Learning Insights into Bolivia's Economic Downturns.* [SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4981964)

@@ -4,7 +4,7 @@ title: Social Registry of Households Roadmap
 description: Household prioritization with Proxy Means Testing and machine learning (MEFP & IDB, 2025)
 img:
 importance: 1
-category: policy
+category: Policy
 ---
 
 **Role:** Econometrics & Machine-Learning Lead Analyst, Ministry of Economy and Public Finance (MEFP, Bolivia) and Inter-American Development Bank (IDB), 2025.

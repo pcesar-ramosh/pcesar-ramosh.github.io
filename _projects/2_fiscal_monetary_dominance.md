@@ -4,7 +4,7 @@ title: Fiscal vs. monetary dominance in Bolivia, 1930–2024
 description: A historical index built from central bank reports with NLP and numerical extraction
 img:
 importance: 2
-category: research
+category: Research
 ---
 
 **Status:** working paper in progress (2026).

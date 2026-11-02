@@ -1,11 +1,11 @@
 ---
 layout: page
-title: projects
+title: Projects
 permalink: /projects/
 description: Research and policy projects. Each card opens a short summary with links to papers and code.
 nav: true
 nav_order: 3
-display_categories: [research, policy]
+display_categories: [Research, Policy]
 horizontal: false
 ---
 

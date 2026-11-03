@@ -44,6 +44,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/teaching/";
           },
+        },{id: "nav-notes",
+          title: "Notes",
+          description: "Study notes from courses I am taking. They summarize lectures and readings in my own words and are not original work.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/notes/";
+          },
         },{id: "news-the-17th-encounter-of-economists-of-bolivia-will-be-held-in-september-at-the-universidad-san-francisco-xavier-de-chuquisaca-commemorating-its-400th-anniversary-this-prestigious-event-will-address-regional-economic-performance-amid-geopolitical-tensions-participants-can-submit-research-papers-related-to-various-economic-themes-sparkles-smile",
           title: 'The 17th Encounter of Economists of Bolivia will be held in September at...',
           description: "",

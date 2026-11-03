@@ -11,6 +11,7 @@ _styles: >
   .projects .card-title { font-size: 1.2rem; line-height: 1.35; margin-bottom: 0.4rem; }
   .projects .card-text { font-size: 0.9rem; }
   .projects .card-img-top { aspect-ratio: 16 / 10; object-fit: cover; }
+  html[data-theme="dark"] .projects .card-img-top { filter: invert(1) hue-rotate(180deg); }
 ---
 
 <!-- pages/projects.md -->

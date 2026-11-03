@@ -5,6 +5,8 @@ description: A heterogeneous-agent model of fiscal policy in economies with high
 img: assets/img/projects/fiscal_policy_informality.png
 importance: 1
 category: Research
+_styles: >
+  html[data-theme="dark"] .adaptive-img { filter: invert(1) hue-rotate(180deg); }
 ---
 
 **Question.** What are the effects of fiscal policy on wealth and consumption distribution in an economy with high informality?
@@ -19,10 +21,10 @@ This project was my M.Sc. thesis in Economic Engineering at the Universidad Naci
 
 <div class="row">
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/projects/thesis_consumption_policies.png" title="Consumption policy functions" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid loading="eager" path="assets/img/projects/thesis_consumption_policies.png" title="Consumption policy functions" class="img-fluid adaptive-img" %}
   </div>
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/projects/thesis_lorenz_wealth.png" title="Lorenz curve of wealth" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid loading="eager" path="assets/img/projects/thesis_lorenz_wealth.png" title="Lorenz curve of wealth" class="img-fluid adaptive-img" %}
   </div>
 </div>
 <div class="caption">

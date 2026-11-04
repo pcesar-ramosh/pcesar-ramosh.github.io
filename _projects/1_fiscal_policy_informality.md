@@ -19,6 +19,8 @@ This project was my M.Sc. thesis in Economic Engineering at the Universidad Naci
 - Fiscal policy: income taxes (formal sector only), consumption taxes (all agents) and targeted transfers to informal workers.
 - Solved in continuous time with the Hamilton–Jacobi–Bellman and Kolmogorov forward (Fokker–Planck) equations, using a finite-difference upwind scheme in MATLAB.
 
+**The model, step by step:** [assumptions, equations and every derivation](/projects/fiscal-policy-informality/model/), from the household problem to the numerical solution.
+
 <div class="row">
   <div class="col-sm mt-3 mt-md-0">
     {% include figure.liquid loading="eager" path="assets/img/projects/thesis_consumption_policies.png" title="Consumption policy functions" class="img-fluid adaptive-img" %}
@@ -35,4 +37,4 @@ This project was my M.Sc. thesis in Economic Engineering at the Universidad Naci
 
 The work is part of the [Heterogeneous Agents Research Initiative](https://ri-ef.com/heterogeneous-agents-research-initiative/) at RIEF.
 
-**Links:** [Code (GitHub)](https://github.com/pcesar-ramosh/fiscal_policy_informality) · [Publications](/publications/)
+**Links:** [The model step by step](/projects/fiscal-policy-informality/model/) · [Code (GitHub)](https://github.com/pcesar-ramosh/fiscal_policy_informality) · [Publications](/publications/)

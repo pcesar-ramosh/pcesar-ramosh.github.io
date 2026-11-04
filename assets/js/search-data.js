@@ -46,7 +46,7 @@ ninja.data = [{
           },
         },{id: "nav-notes",
           title: "Notes",
-          description: "Study notes from courses I am taking. They summarize lectures and readings in my own words and are not original work.",
+          description: "Study notes from courses I have taken. They summarize lectures and readings in my own words and are not original work.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/notes/";

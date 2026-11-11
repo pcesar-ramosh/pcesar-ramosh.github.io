@@ -93,6 +93,11 @@ ninja.data = [{
           description: "Household prioritization with Proxy Means Testing and machine learning (MEFP &amp; IDB, 2025)",
           section: "Projects",handler: () => {
               window.location.href = "/projects/5_social_registry_pmt/";
+            },},{id: "projects-proxy-means-test-targeting-poor-households",
+          title: 'Proxy Means Test: Targeting Poor Households',
+          description: "Interactive slides on how we designed a first PMT for Bolivia, the targeting errors and how to reduce them",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/6_pmt_targeting/";
             },},{
         id: 'social-email',
         title: 'email',

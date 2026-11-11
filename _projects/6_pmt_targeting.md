@@ -9,7 +9,7 @@ category: Policy
 
 **Authors:** **Evelyn Mamani, Cesar Ramos and Varinia Tarqui** (alphabetical order by surname).
 
-A social registry has to rank households by need, but in an economy with high informality income cannot be verified. A proxy means test (PMT) predicts household welfare from characteristics that an interviewer can observe: demographics, housing conditions and durable goods. The slides below present the PMT we estimated for Bolivia with the 2023 Household Survey, as part of a government technical team.
+A social registry has to rank households by need, but in an economy with high informality income cannot be verified. A proxy means test (PMT) predicts household welfare from characteristics that an interviewer can observe: demographics, housing conditions and durable goods. The slides below present the PMT we estimated for Bolivia with the 2023 Household Survey, as part of a government technical team. It is our team's exercise and not necessarily the first PMT estimated for the country.
 
 **Contents**
 

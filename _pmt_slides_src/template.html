@@ -83,6 +83,33 @@ input[type=range]{width:100%;accent-color:var(--pur)}
 </section>
 
 <section class="slide">
+  <div class="kicker">Background</div>
+  <h2>How the work evolved</h2>
+  <p class="sub">Four rounds of estimation between 2024 and 2025. Each one changed the data, the model or the way errors are measured.</p>
+  <div class="grid2">
+    <div class="card"><h3><span class="tag">1</span>Policy paper · 2021 survey</h3><p>Regression with 12 main variables taken from a poverty scorecard, plus electricity spending. A random forest with 52 variables at person level. Validation by income quintile.</p></div>
+    <div class="card"><h3><span class="tag">2</span>Reference specification · 2023 survey</h3><p>A reviewer shared a baseline: stepwise regression (p &lt; 0.15) with simple yes/no housing variables, region effects, and exclusion and inclusion errors against the poverty line.</p></div>
+    <div class="card"><h3><span class="tag">3</span>Preliminary results · August 2025</h3><p>Quantile regression by area and a tuned random forest (800 trees), then gradient boosting, XGBoost and quantile boosting. 80/20 validation.</p></div>
+    <div class="card"><h3><span class="tag">4</span>Technical annex · September 2025</h3><p>Income net of all state transfers, categories regrouped by area, stepwise at p &lt; 0.20, random forest variants that reweight the poor, and a 0–100 score with flexible cutoffs.</p></div>
+  </div>
+  <p class="small" style="margin-top:16px">The rest of the slides describe round 4 in detail and use rounds 1–3 to show what changed and why.</p>
+</section>
+
+<section class="slide">
+  <div class="kicker">Round 1 · 2021 survey</div>
+  <div style="display:flex;justify-content:space-between;align-items:flex-end"><h2>First test: recovering income quintiles</h2><span class="btns" data-g="quint"><button class="on" data-a="reg">Regression (12)</button><button data-a="rf">Random forest (52)</button></span></div>
+  <p class="sub">Share of each observed quintile classified into each predicted quintile (%), with 12 and 52 variables.</p>
+  <div class="cols">
+    <div style="flex:1.25;position:relative"><svg id="quint" viewBox="0 0 600 400" width="100%"></svg></div>
+    <div>
+      <div class="card"><h3>What it showed</h3><ul><li>Both tools work best at the extremes and worst in the middle quintiles.</li><li>The regression places 56% of the poorest quintile correctly; the random forest 82%.</li><li>The cost: 52 variables, including utility bills, to collect and verify.</li></ul></div>
+      <div class="card" style="margin-top:12px"><h3>Caution</h3><p>The random forest was validated on persons. If members of one household fall in both samples, accuracy is overstated: the split should be by household.</p></div>
+    </div>
+  </div>
+  <p class="tiny">Source: the team's policy paper (2025), 2021 Household Survey. Regression: 70/30 split; random forest: 80/20 split.</p>
+</section>
+
+<section class="slide">
   <div class="kicker">Design</div>
   <h2>The assumptions behind our PMT</h2>
   <p class="sub">Every PMT rests on choices like these. Making them explicit shows where errors can come from.</p>
@@ -118,6 +145,20 @@ input[type=range]{width:100%;accent-color:var(--pur)}
       <p class="tiny">Weighted household shares. The dashed line is the median poverty line of the area. Own calculations from the survey.</p>
     </div>
   </div>
+</section>
+
+<section class="slide">
+  <div class="kicker">Descriptive statistics</div>
+  <h2>Urban and rural households look different</h2>
+  <p class="sub">Means of selected variables in the 2023 survey. These gaps are the reason for separate models.</p>
+  <div class="cols">
+    <div style="flex:1.4"><table id="desc"><tr><th>Variable</th><th class="n">Urban</th><th class="n">Rural</th><th style="width:38%">Urban vs rural</th></tr></table></div>
+    <div>
+      <div class="card"><h3>Reading the table</h3><p>Income per capita in rural areas is about half the urban level. Rural heads have 4.5 fewer years of schooling, and only 3 in 10 rural households own a refrigerator.</p></div>
+      <div class="card" style="margin-top:12px"><h3>Implication for the PMT</h3><p>A variable that separates rich from poor in cities (garbage collection, permanent floor) barely varies there, while it does discriminate in rural areas, and the reverse.</p></div>
+    </div>
+  </div>
+  <p class="tiny">Source: descriptive statistics in the team's results presentation (August 2025). Income in bolivianos per month, net of state transfers.</p>
 </section>
 
 <section class="slide">
@@ -203,6 +244,20 @@ input[type=range]{width:100%;accent-color:var(--pur)}
 </section>
 
 <section class="slide">
+  <div class="kicker">Round 3 · August 2025</div>
+  <div style="display:flex;justify-content:space-between;align-items:flex-end"><h2>Do more flexible models help?</h2><span class="btns" data-g="boost"><button class="on" data-a="urban">Urban</button><button data-a="rural">Rural</button></span></div>
+  <p class="sub">Errors (%) of tree-based models on the same variables. Q10–Q60 are quantile gradient boosting models.</p>
+  <div class="cols">
+    <div style="flex:1.6;position:relative"><svg id="boost" viewBox="0 0 760 400" width="100%"></svg></div>
+    <div>
+      <div class="card"><h3>Findings</h3><ul><li>Urban errors stay between 45% and 51% whatever the algorithm.</li><li>Rural errors are lower (23–30%); quantile boosting at Q30 is the best case.</li><li>Quantile regression: 52% / 46% urban, 34% / 31% rural. No gain.</li></ul></div>
+      <div class="card" style="margin-top:12px"><h3>Lesson</h3><p>With the same predictors, the algorithm moves errors by a few points. The limit is the information in the variables.</p></div>
+    </div>
+  </div>
+  <p class="tiny">Source: the team's results presentation (August 2025). One 80/20 split; differences of 2–3 points are within split-to-split variation.</p>
+</section>
+
+<section class="slide">
   <div class="kicker">Why exclusion errors are high</div>
   <div style="display:flex;justify-content:space-between;align-items:flex-end"><h2>The model compresses the distribution</h2><span class="btns" data-g="dec"><button class="on" data-a="urban">Urban</button><button data-a="rural">Rural</button></span></div>
   <p class="sub">A regression predicts the average, so the poorest look richer than they are and the richest look poorer.</p>
@@ -273,7 +328,7 @@ input[type=range]{width:100%;accent-color:var(--pur)}
     <tr><td><b>Train on persons</b></td><td>More observations, weighted by household share</td><td>Best balance: urban 35% / 37%, rural 26% / 18%</td></tr>
     <tr><td><b>Separate models by area</b></td><td>Different variables and coefficients</td><td>Rural errors are 11–14 points lower than urban</td></tr>
     <tr><td><b>Better proxies</b></td><td>Add verifiable predictors; use a newer survey</td><td>Raises R²: the only lever that lowers both errors</td></tr>
-    <tr><td><b>Fit the bottom, not the mean</b></td><td>Quantile or poverty-weighted regression</td><td>Suggested by the literature; to be tested</td></tr>
+    <tr><td><b>Fit the bottom, not the mean</b></td><td>Quantile or poverty-weighted regression</td><td>Tested with quantile regression and quantile boosting: no clear gain</td></tr>
   </table>
   <p class="small" style="margin-top:12px">Beyond statistics: on-demand registration, appeals and periodic updates let wrongly excluded households get back in.</p>
 </section>
@@ -293,6 +348,21 @@ input[type=range]{width:100%;accent-color:var(--pur)}
       <p class="small">Crowding and dependency matter most in cities; working-age share and schooling in rural areas. Importance in %, baseline random forest (technical annex).</p>
     </div>
   </div>
+</section>
+
+<section class="slide">
+  <div class="kicker">International experience</div>
+  <h2>What other countries did</h2>
+  <p class="sub">References we used for the design, and what we took from each.</p>
+  <table>
+    <tr><th>Country</th><th>Approach</th><th>What we took</th></tr>
+    <tr><td><b>Honduras</b></td><td>Income-based PMT for the conditional cash transfer, by area, with stepwise selection. Rural errors fell to 17% from 38% (exclusion) and 32% (inclusion).</td><td>The regression design and the error-by-cutoff analysis</td></tr>
+    <tr><td><b>Kenya</b></td><td>One harmonised score for four programs, built from census data with categorical principal components.</td><td>One score serving several programs; an index when income data are weak</td></tr>
+    <tr><td><b>Colombia</b></td><td>Households are classified into ordered groups and subgroups, from extreme poverty to non-poor.</td><td>Ordered categories (quintiles) instead of a poor / non-poor label</td></tr>
+    <tr><td><b>Peru</b></td><td>Poor / non-poor classification with thresholds adjusted by region.</td><td>Area-specific models and cutoffs</td></tr>
+    <tr><td><b>Indonesia</b></td><td>Field experiment comparing PMT, community targeting and a hybrid.</td><td>PMT was the most accurate, community targeting the best accepted: combine both</td></tr>
+  </table>
+  <p class="small" style="margin-top:12px">A common practice (Grosh et al., 2022): set the operational cutoff above the conceptual one, for example covering two quintiles to reach the poorest one, and accept the higher budget.</p>
 </section>
 
 <section class="slide">
@@ -333,7 +403,13 @@ input[type=range]{width:100%;accent-color:var(--pur)}
       </ul>
     </div>
   </div>
-  <div class="card" style="margin-top:8px"><p class="small" style="margin:0"><b>References.</b> Benedetti, Farach, Ibarrarán and Villa (2014), targeting of the conditional cash transfer program in Honduras, technical note. · Brown, Ravallion and van de Walle (2018), "A poor means test? Econometric targeting in Africa", <i>Journal of Development Economics</i> 134. · Coady, Grosh and Hoddinott (2004), <i>Targeting of Transfers in Developing Countries</i>, World Bank. · Grosh and Baker (1995), "Proxy means tests for targeting social programs", LSMS Working Paper 118.</p></div>
+</section>
+
+<section class="slide">
+  <div class="kicker">Sources</div>
+  <h2>References</h2>
+  <ul><li style="font-size:18.5px">Benedetti, Farach, Ibarrarán and Villa (2014), targeting of the conditional cash transfer program in Honduras, technical note.</li><li style="font-size:18.5px">Brown, Ravallion and van de Walle (2018), "A poor means test? Econometric targeting in Africa", <i>Journal of Development Economics</i> 134.</li><li style="font-size:18.5px">Coady, Grosh and Hoddinott (2004), <i>Targeting of Transfers in Developing Countries</i>, World Bank.</li><li style="font-size:18.5px">Grosh and Baker (1995), "Proxy means tests for targeting social programs", LSMS Working Paper 118.</li><li style="font-size:18.5px">Grosh, Leite, Wai-Poi and Tesliuc (2022), <i>Revisiting Targeting in Social Assistance</i>, World Bank.</li><li style="font-size:18.5px">Villa (2016), "A harmonised proxy means test for Kenya's National Safety Net programme", GDI Working Paper 2016-003.</li></ul>
+  <p class="small" style="margin-top:14px">Data: 2021 and 2023 Household Surveys, national statistics office of Bolivia. Results labelled "own calculations" are a replication with the public microdata; the code is in the repository of this website.</p>
 </section>
 
 <div id="nav"><button id="prev" aria-label="Previous">‹</button><button id="next" aria-label="Next">›</button><span id="count"></span><span style="flex:1"></span><span>Proxy Means Test · Mamani, Ramos and Tarqui</span><button id="fs" aria-label="Full screen" title="Full screen" style="width:auto;padding:0 10px;font-size:13px">Full screen</button></div>
@@ -350,7 +426,10 @@ function clear(s){while(s.firstChild)s.removeChild(s.firstChild)}
 const tip=$('#tip'),stage=$('#stage');let scale=1;
 function hover(e,html){e.addEventListener('mousemove',ev=>{const r=stage.getBoundingClientRect();tip.innerHTML=html;tip.style.display='block';tip.style.left=((ev.clientX-r.left)/scale+12)+'px';tip.style.top=((ev.clientY-r.top)/scale-34)+'px'});e.addEventListener('mouseleave',()=>tip.style.display='none')}
 const fmt=x=>Math.round(x).toLocaleString('en-US');
-const state={hist:'urban',coef:'urban',dec:'urban',cut:'urban',rep:'urban',imp:'urban'};
+const QUINT={reg:[[55.8,24.5,11.6,6.4,1.7],[30.1,33.5,22.4,10.2,3.7],[13.4,25.5,27.3,24.4,9.4],[5.1,12.6,23.9,31.9,26.5],[1.1,2.9,12.4,23.7,60.0]],rf:[[81.6,7.7,4.9,2.9,2.9],[12.1,71.5,6.3,5.8,4.3],[5.9,9.0,69.9,6.4,8.9],[5.4,8.0,8.0,65.6,13.1],[1.7,4.0,3.5,6.9,83.9]]};
+const BOOST={urban:[['Random forest',51.2,50.0],['Gradient boosting',46.8,45.5],['XGBoost',47.1,45.8],['Q10',47.9,46.6],['Q20',47.1,45.8],['Q30',48.4,47.2],['Q40',47.3,46.0],['Q50',47.0,45.6],['Q60',48.1,46.8]],rural:[['Random forest',28.8,27.2],['Gradient boosting',28.2,26.5],['XGBoost',30.1,28.5],['Q10',29.1,27.5],['Q20',27.9,26.2],['Q30',25.3,23.6],['Q40',27.2,25.6],['Q50',26.9,25.2],['Q60',27.9,26.2]]};
+const DESC=[['Income per capita (Bs)',2017,1106,0],['Head: years of schooling',11.5,7.0,1],['Rooms per person',0.9,1.0,1],['Member in public sector',0.2,0.1,1],['Permanent walls',0.9,0.5,1],['Garbage collection',1.0,0.1,1],['Internet access',0.6,0.5,1],['Owns refrigerator',0.8,0.3,1]];
+const state={quint:'reg',boost:'urban',hist:'urban',coef:'urban',dec:'urban',cut:'urban',rep:'urban',imp:'urban'};
 
 function drawHist(){const s=$('#hist'),d=DATA[state.hist];clear(s);const L=40,R=545,T=15,B=335,mx=Math.max(...d.hist),n=d.hist.length,x0=d.bins[0],x1=d.bins[n];
   const X=v=>L+(v-x0)/(x1-x0)*(R-L);const col=state.hist=='urban'?BLUE:OR;
@@ -414,10 +493,27 @@ function drawRep(){const s=$('#rep'),d=DATA[state.rep];clear(s);const L=50,R=540
 function drawImp(){const s=$('#imp'),d=DATA.imp[state.imp];clear(s);const L=215,R=520,T=10,B=320,h=(B-T)/d.length,mx=14;
   d.forEach((k,i)=>{const y=T+i*h+h/2;el(s,'text',{x:L-10,y:y+5,'text-anchor':'end','font-size':14.5,fill:'#1c2430'},k[0]);const r=el(s,'rect',{x:L,y:y-h*.32,width:k[1]/mx*(R-L),height:h*.64,fill:PUR,opacity:.8,rx:2});el(s,'text',{x:L+k[1]/mx*(R-L)+6,y:y+5,'font-size':13.5,fill:MUT},k[1].toFixed(1));hover(r,`${k[0]}: ${k[1].toFixed(1)}% of importance`)})}
 
-const draw={hist:drawHist,coef:drawCoef,dec:drawDec,cut:()=>{$('#cutr').value=Math.round(DATA[state.cut].rate);drawCut()},rep:drawRep,imp:drawImp};
+function drawQuint(){const s=$('#quint'),m=QUINT[state.quint];clear(s);const L=120,T=50,c=88,h=62;
+  el(s,'text',{x:L+2.5*c,y:18,'text-anchor':'middle','font-size':14,fill:MUT,'font-weight':700},'PREDICTED QUINTILE');
+  el(s,'text',{x:20,y:T+2.5*h,'text-anchor':'middle','font-size':14,fill:MUT,'font-weight':700,transform:`rotate(-90 20 ${T+2.5*h})`},'OBSERVED QUINTILE');
+  for(let i=0;i<5;i++){el(s,'text',{x:L+i*c+c/2,y:T-10,'text-anchor':'middle','font-size':14,fill:MUT},'Q'+(i+1));el(s,'text',{x:L-12,y:T+i*h+h/2+5,'text-anchor':'end','font-size':14,fill:MUT},'Q'+(i+1)+(i==0?' poorest':i==4?' richest':''));
+    for(let j=0;j<5;j++){const v=m[i][j];const r=el(s,'rect',{x:L+j*c+2,y:T+i*h+2,width:c-4,height:h-4,rx:6,fill:i==j?PUR:BLUE,opacity:0.08+v/100*0.85});
+      el(s,'text',{x:L+j*c+c/2,y:T+i*h+h/2+6,'text-anchor':'middle','font-size':17,'font-weight':i==j?700:400,fill:v>45?'#fff':'#1c2430','pointer-events':'none'},v.toFixed(1));
+      hover(r,`Observed Q${i+1} classified as Q${j+1}: ${v.toFixed(1)}%`)}}
+  const acc=m.reduce((a,r,i)=>a+r[i],0)/5;el(s,'text',{x:L+2.5*c,y:T+5*h+28,'text-anchor':'middle','font-size':14.5,fill:'#1c2430'},`Average correct classification: ${acc.toFixed(0)}%`)}
+function drawBoost(){const s=$('#boost'),d=BOOST[state.boost];clear(s);const L=50,R=745,T=20,B=320,gw=(R-L)/d.length,Y=v=>B-v/60*(B-T);
+  [0,20,40,60].forEach(v=>{el(s,'line',{x1:L,x2:R,y1:Y(v),y2:Y(v),stroke:LINE});el(s,'text',{x:L-8,y:Y(v)+5,'text-anchor':'end','font-size':13,fill:MUT},v)});
+  const best=Math.min(...d.map(k=>k[1]));
+  d.forEach((k,i)=>{const x0=L+i*gw+10,bw=(gw-20)/2;[[1,OR,'exclusion'],[2,BLUE,'inclusion']].forEach((q,j)=>{const v=k[q[0]];const r=el(s,'rect',{x:x0+j*bw,y:Y(v),width:bw-3,height:B-Y(v),fill:q[1],opacity:k[1]==best?1:.6,rx:2});hover(r,`${k[0]} · ${q[2]}: ${v.toFixed(1)}%`);el(s,'text',{x:x0+j*bw+(bw-3)/2,y:Y(v)-5,'text-anchor':'middle','font-size':11.5,fill:MUT},Math.round(v))});
+    const w=k[0].split(' ');el(s,'text',{x:L+i*gw+gw/2,y:B+20,'text-anchor':'middle','font-size':13,fill:'#1c2430','font-weight':k[1]==best?700:500},w[0]);if(w[1])el(s,'text',{x:L+i*gw+gw/2,y:B+36,'text-anchor':'middle','font-size':13,fill:'#1c2430'},w[1])});
+  el(s,'line',{x1:L+3*gw,x2:R,y1:B+48,y2:B+48,stroke:MUT});el(s,'text',{x:L+6*gw,y:B+66,'text-anchor':'middle','font-size':13,fill:MUT},'quantile gradient boosting');
+  [['exclusion',OR],['inclusion',BLUE]].forEach((q,j)=>{el(s,'rect',{x:L+10+j*120,y:B+56,width:14,height:14,fill:q[1],rx:2});el(s,'text',{x:L+30+j*120,y:B+68,'font-size':13.5,fill:'#1c2430'},q[0])})}
+(function(){const t=$('#desc');DESC.forEach(k=>{const mx=Math.max(k[1],k[2]),f=v=>k[3]?v.toFixed(1):fmt(v);const tr=document.createElement('tr');
+  tr.innerHTML=`<td>${k[0]}</td><td class="n">${f(k[1])}</td><td class="n">${f(k[2])}</td><td><div style="height:9px;border-radius:3px;background:${BLUE};width:${k[1]/mx*100}%;margin-bottom:3px"></div><div style="height:9px;border-radius:3px;background:${OR};width:${k[2]/mx*100}%"></div></td>`;t.appendChild(tr)})})();
+const draw={quint:drawQuint,boost:drawBoost,hist:drawHist,coef:drawCoef,dec:drawDec,cut:()=>{$('#cutr').value=Math.round(DATA[state.cut].rate);drawCut()},rep:drawRep,imp:drawImp};
 document.querySelectorAll('.btns').forEach(g=>g.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;g.querySelectorAll('button').forEach(x=>x.classList.toggle('on',x===b));state[g.dataset.g]=b.dataset.a;draw[g.dataset.g]()}));
 $('#cutr').addEventListener('input',drawCut);
-drawHist();drawCoef();drawMeth();drawDec();draw.cut();drawRep();drawImp();
+drawQuint();drawBoost();drawHist();drawCoef();drawMeth();drawDec();draw.cut();drawRep();drawImp();
 
 const slides=[...document.querySelectorAll('.slide')];let cur=0;
 function go(n){cur=Math.max(0,Math.min(slides.length-1,n));slides.forEach((s,i)=>s.classList.toggle('on',i===cur));$('#count').textContent=(cur+1)+' / '+slides.length;$('#bar').style.width=((cur+1)/slides.length*100)+'%';tip.style.display='none';try{history.replaceState(null,'','#'+(cur+1))}catch(e){}}

@@ -95,7 +95,7 @@ ninja.data = [{
               window.location.href = "/projects/5_social_registry_pmt/";
             },},{id: "projects-proxy-means-test-targeting-poor-households",
           title: 'Proxy Means Test: Targeting Poor Households',
-          description: "Interactive slides on how we designed a first PMT for Bolivia, the targeting errors and how to reduce them",
+          description: "Econometric and machine-learning household classification with Bolivia&#39;s 2023 Household Survey",
           section: "Projects",handler: () => {
               window.location.href = "/projects/6_pmt_targeting/";
             },},{
